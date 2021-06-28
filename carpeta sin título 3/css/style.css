@@ -1,0 +1,86 @@
+.body {
+  background-color: black;
+  color: white;
+}
+#hormonas{
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 200px;
+
+}
+#sistema{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 200px;
+ }
+#horm_text{
+   text-align: center;
+ }
+#sis_text{
+  text-align: center;
+}
+#bien{
+  text-align: center;
+  font-size: 100px;
+  margin-top: 500px;
+  margin-bottom: 700px;
+}
+#tiroides{
+  align-content: left;
+  margin-top: 200px;
+  transform: translate(-35%, 0%);
+}
+
+#sistematitle {
+color: #FFFFFF;
+text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0, 0 0 6px #2cd0f0, 0 0 20px #2cd0f0, 0 0 20px #2cd0f0, 0 0 1px #2cd0f0, 0 0 12px #2cd0f0;}
+
+#hormonastitle {
+color: #FFFFFF;
+text-shadow: 0 0 8px #d43f3a, 0 0 2px #d43f3a, 0 0 10px #d43f3a, 0 0 6px #d43f3a, 0 0 20px #d43f3a, 0 0 20px #d43f3a, 0 0 1px #d43f3a, 0 0 12px #d43f3a;}
+
+#textotiroides{
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+}
+
+#textotiroides:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+#textotiroides a{
+  color: lime;
+  text-decoration: none;
+  animation-play-state: paused;
+
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+
+#textotiroides.onscroll{
+  animation-play-state: running;
+}
